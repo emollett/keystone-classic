@@ -53,7 +53,7 @@ var Footer = React.createClass({
 						className={css(classes.link)}
 						tabIndex="-1"
 					>
-						KeystoneJS
+						KeystoneJS - UPDATED!
 					</a>
 					<span> version {version}.</span>
 					{this.renderUser()}
