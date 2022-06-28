@@ -3,10 +3,8 @@ import React from 'react';
 import tinymce from 'tinymce';
 import { FormInput } from '../../../admin/client/App/elemental';
 import evalDependsOn from '../../utils/evalDependsOn';
-
-import contentUiCss from 'tinymce/skins/ui/oxide/content.css';
-import contentCss from 'tinymce/skins/content/default/content.css';
-
+import 'tinymce/icons/default';
+import 'tinymce/themes/silver';
 
 /**
  * TODO:
@@ -169,7 +167,6 @@ module.exports = Field.create({
 			menubar: options.menubar || false,
 			skin: false,
 			branding: false,
-			content_style: contentUiCss.toString() + '\n' + contentCss.toString(),
 		};
 
 		if (this.shouldRenderField()) {

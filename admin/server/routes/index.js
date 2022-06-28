@@ -52,7 +52,6 @@ module.exports = function IndexRoute (req, res) {
 			skin: false,
 			menubar: keystone.get('wysiwyg menubar'),
 			importcss: keystone.get('wysiwyg importcss') || '',
-			theme: 'silver',
 		} },
 	};
 	keystoneData.csrf.header[keystone.security.csrf.CSRF_HEADER_KEY] = keystone.security.csrf.getToken(req, res);
