@@ -91,7 +91,7 @@ module.exports = function createStaticRouter (keystone) {
 	router.get('/js/fields.js', bundles.fields.serve);
 	router.get('/js/signin.js', bundles.signin.serve);
 	router.get('/js/admin.js', bundles.admin.serve);
-	router.use('/js/lib/tinymce/skins/keystone', express.static(`${keystoneTinymcePath}/skin`));
+	// router.use('/js/lib/tinymce/skins/keystone', express.static(`${keystoneTinymcePath}/skin`)); //this isn't created, there isn't anything here
 	router.use('/js/lib/tinymce/plugins/uploadimage', express.static(`${keystoneTinymcePath}/plugins/uploadimage`));
 	router.use('/js/lib/tinymce', express.static(path.dirname(require.resolve('tinymce'))));
 	router.use(express.static(path.resolve(__dirname + '/../../public')));
