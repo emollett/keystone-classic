@@ -163,7 +163,7 @@ module.exports = Field.create({
 			toolbar: toolbar,
 			plugins: plugins,
 			menubar: options.menubar || false,
-			skin: 'keystone',
+			skin: false,
 			branding: false,
 		};
 
