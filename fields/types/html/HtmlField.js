@@ -1,6 +1,6 @@
 import Field from '../Field';
 import React from 'react';
-import tinymce from 'tinymce';
+import tinymce from 'tinymce/tinymce';
 import { FormInput } from '../../../admin/client/App/elemental';
 import evalDependsOn from '../../utils/evalDependsOn';
 import 'tinymce/icons/default';

@@ -2,6 +2,7 @@
   "plugins": [
     "@babel/plugin-transform-object-assign"
   ],
+	"compact": false,
   "presets": [
     "@babel/preset-react",
     "@babel/preset-env"
