@@ -3,6 +3,8 @@ import React from 'react';
 import tinymce from 'tinymce';
 import { FormInput } from '../../../admin/client/App/elemental';
 import evalDependsOn from '../../utils/evalDependsOn';
+import 'tinymce/skins/lightgray/content.min.css';
+import 'tinymce/skins/lightgray/skin.min.css';
 
 /**
  * TODO:
