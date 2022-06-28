@@ -143,16 +143,6 @@ module.exports = Field.create({
 				plugins.push(additionalPlugins[i]);
 			}
 		}
-		if (options.importcss) {
-			plugins.push('importcss');
-			var importcssOptions = {
-				content_css: options.importcss,
-				importcss_append: true,
-				importcss_merge_classes: true,
-			};
-
-			Object.assign(options.additionalOptions, importcssOptions);
-		}
 
 		if (!options.overrideToolbar) {
 			toolbar += ' | code';
@@ -163,7 +153,7 @@ module.exports = Field.create({
 			toolbar: toolbar,
 			plugins: plugins,
 			menubar: options.menubar || false,
-			skin: options.skin || 'keystone',
+			skin: 'keystone',
 			branding: false,
 		};
 

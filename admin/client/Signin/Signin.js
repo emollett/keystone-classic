@@ -147,7 +147,7 @@ var SigninView = React.createClass({
 						target="_blank"
 						title="The Node.js CMS and web application platform (new window)"
 					>
-						KeystoneJS (tinymce5)
+						KeystoneJS
 					</a>
 				</div>
 			</div>
