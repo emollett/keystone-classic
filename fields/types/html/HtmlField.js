@@ -143,6 +143,16 @@ module.exports = Field.create({
 				plugins.push(additionalPlugins[i]);
 			}
 		}
+		if (options.importcss) {
+			plugins.push('importcss');
+			var importcssOptions = {
+				content_css: false,
+				importcss_append: true,
+				importcss_merge_classes: true,
+			};
+
+			Object.assign(options.additionalOptions, importcssOptions);
+		}
 
 		if (!options.overrideToolbar) {
 			toolbar += ' | code';
