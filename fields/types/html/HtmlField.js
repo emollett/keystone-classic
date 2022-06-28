@@ -3,9 +3,6 @@ import React from 'react';
 import tinymce from 'tinymce';
 import { FormInput } from '../../../admin/client/App/elemental';
 import evalDependsOn from '../../utils/evalDependsOn';
-import 'tinymce/icons/default';
-import 'tinymce/themes/silver';
-import 'tinymce/skins/ui/oxide/skin.css';
 
 import contentUiCss from 'tinymce/skins/ui/oxide/content.css';
 import contentCss from 'tinymce/skins/content/default/content.css';
